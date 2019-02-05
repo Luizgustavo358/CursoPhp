@@ -18,19 +18,35 @@ nav { float: left; width: 100%; background: #000000; font-weight: bold; font-fam
 /* Smartphone */
 @media only screen and (max-width: 480px) {
     nav { height: 50px; }
-        nav li { width: 100%; }
+        nav li { position: relative; top: 51px; float: left; width: 90%; display: none; background: #10A44B; height: 30px; padding-top: 10px; padding-bottom: 10px; padding-left: 10%; border-bottom: 1px #FFFFFF solid; color: #FFFFFF; cursor: pointer; }
+
+    .ind-botao { position: absolute; width: 65%; top: 7px; right: 0; cursor: pointer; padding-right: 10%; text-align: right; }
+
+    .ind-logo { position: absolute; width: 25%; left: 0; top: 0; text-align: center; }
+        .ind-logo img { margin-top: 3px; max-height: 40px; }
 }
 
 
 /* Tablet */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     nav { height: 80px; }
-        nav li { width: 100%; }
+        nav li { position: relative; top: 81px; float: left; width: 90%; display: none; background: #10A44B; height: 30px; padding-top: 10px; padding-bottom: 10px; padding-left: 10%; border-bottom: 1px #FFFFFF solid; color: #FFFFFF; cursor: pointer; }
+
+    .ind-botao { position: absolute; width: 65%; top: 22px; right: 0; cursor: pointer; padding-right: 10%; text-align: right; }
+
+    .ind-logo { position: absolute; width: 25%; left: 0; top: 0; text-align: center; }
+        .ind-logo img { margin-top: 12px; max-height: 50px; }
 }
 
 
 /* Desktop */
 @media only screen and (min-width: 769px) {
-    nav { height: 100px; }
-        nav li { width: 20%; text-align: center; }
+    nav { height: 40px; padding-top: 15px; padding-left: 25%; }
+        nav li { width: 15%; text-align: center; }
+        nav li:last-child { color: #10A44B }
+
+    .ind-botao { display: none; }
+
+    .ind-logo { position: absolute; width: 25%; left: 0; top: 0; text-align: center; }
+        .ind-logo img { max-width: 100%; }
 }
