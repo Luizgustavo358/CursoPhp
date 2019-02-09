@@ -15,7 +15,11 @@ nav {float: left; width: 100%; font-weight: bold; font-family: Verdana,sans-seri
 
 .ind-topo {float: left; width: 100%; background: #000000; }
 
-.ind-logo{position: absolute; width: 25%; left: 0; top: 0; text-align: center;}
+.ind-logo{position: absolute; width: 25%; left: 0; top: 0; text-align: center; z-index: 2;}
+
+.ind-slide{float: left; width: 100%; z-index: 1;}
+    .ind-slide img{width: 100%;}
+    .ind-slide img picture{width: 100%;}
 
 
 
