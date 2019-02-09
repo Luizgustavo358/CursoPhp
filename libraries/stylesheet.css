@@ -8,45 +8,55 @@ footer { width: 100%; }
 
 ul { margin: 0; padding: 0; list-style: none; }
 
-nav { float: left; width: 100%; background: #000000; font-weight: bold; font-family: Verdana,sans-serif; color: #FFFFFF; }
-    nav li { float: left; }
+nav {float: left; width: 100%; font-weight: bold; font-family: Verdana,sans-serif; color: #FFFFFF; }
+    nav li{float: left;}
+    nav li a{color: #FFFFFF; text-decoration: none;}
+    nav li:first-child{margin-top: 1px;}
 
+.ind-topo {float: left; width: 100%; background: #000000; }
+
+.ind-logo{position: absolute; width: 25%; left: 0; top: 0; text-align: center;}
 
 
 
 
 /* Smartphone */
-@media only screen and (max-width: 480px) {
-    nav { height: 50px; }
-        nav li { position: relative; top: 51px; float: left; width: 90%; display: none; background: #10A44B; height: 30px; padding-top: 10px; padding-bottom: 10px; padding-left: 10%; border-bottom: 1px #FFFFFF solid; color: #FFFFFF; cursor: pointer; }
+@media only screen and (max-width: 480px){
 
-    .ind-botao { position: absolute; width: 65%; top: 7px; right: 0; cursor: pointer; padding-right: 10%; text-align: right; }
+    nav li{width: 90%; display: none; background: #A9CF46; height: 30px; padding-top: 10px; padding-bottom: 10px; padding-left: 10%; border-bottom: 1px #FFFFFF solid; color: #333333; cursor: pointer;}
 
-    .ind-logo { position: absolute; width: 25%; left: 0; top: 0; text-align: center; }
-        .ind-logo img { margin-top: 3px; max-height: 40px; }
+    .ind-topo {height: 50px; }
+
+    .ind-botao{position: absolute; width: 65%; top: 3px; right: 0; cursor: pointer; padding-right: 10%; text-align: right;}
+
+    .ind-logo img{margin-top: 3px; max-height: 40px;}
 }
 
 
 /* Tablet */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    nav { height: 80px; }
-        nav li { position: relative; top: 81px; float: left; width: 90%; display: none; background: #10A44B; height: 30px; padding-top: 10px; padding-bottom: 10px; padding-left: 10%; border-bottom: 1px #FFFFFF solid; color: #FFFFFF; cursor: pointer; }
+@media only screen and (min-width: 481px) and (max-width: 768px){
 
-    .ind-botao { position: absolute; width: 65%; top: 22px; right: 0; cursor: pointer; padding-right: 10%; text-align: right; }
+    nav li{width: 90%; display: none; background: #A9CF46; height: 30px; padding-top: 10px; padding-bottom: 10px; padding-left: 10%; border-bottom: 1px #FFFFFF solid; color: #333333; cursor: pointer;}
 
-    .ind-logo { position: absolute; width: 25%; left: 0; top: 0; text-align: center; }
-        .ind-logo img { margin-top: 12px; max-height: 50px; }
+    .ind-topo {height: 60px; }
+
+    .ind-botao{position: absolute; width: 65%; top: 9px; right: 0; cursor: pointer; padding-right: 10%; text-align: right;}
+
+    .ind-logo img{margin-top: 3px; max-height: 50px;}
 }
 
 
 /* Desktop */
-@media only screen and (min-width: 769px) {
-    nav { height: 40px; padding-top: 15px; padding-left: 25%; }
-        nav li { width: 15%; text-align: center; }
-        nav li:last-child { color: #10A44B }
+@media only screen and (min-width: 769px){
+    nav{position: absolute; padding-left: 25%;}
+        nav li{width: 15%; padding-top: 20px; text-align: center;}
+        nav li:last-child a{color: #A9CF46;}
+        nav li:hover{border-top: 7px solid #A9CF46; -webkit-transform: all 0.7s ease; -moz-transform: all 0.7s ease; -o-transform: all 0.7s ease; transform: all 0.7s ease;}
+        nav li:hover a{color: #A9CF46;}
 
-    .ind-botao { display: none; }
+    .ind-topo {height: 60px; }
 
-    .ind-logo { position: absolute; width: 25%; left: 0; top: 0; text-align: center; }
-        .ind-logo img { max-width: 100%; }
+    .ind-botao{display: none;}
+
+        .ind-logo img{max-width: 100%;}
 }
