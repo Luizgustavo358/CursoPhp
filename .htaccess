@@ -1,0 +1,9 @@
+# Religando a escrita de URL amigavel
+RewriteEngine On
+
+# Condicoes de nome de arquivo (f) e diretorio (d)
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Regra com expressao regular
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ $1/$2.php
